@@ -8,5 +8,14 @@ namespace Grades
 {
     public class GradeStatistics
     {
+        public GradeStatistics()
+        {
+            this.HighestGrade = 0;
+            this.LowestGrade = float.MaxValue;
+        }
+
+        public float AverageGrade { get; set; }
+        public float HighestGrade { get; set; }
+        public float LowestGrade { get; set; }
     }
 }

@@ -13,9 +13,12 @@ namespace Grades
             GradeBook book = new GradeBook();
             book.AddGrade(grade: 91F);
             book.AddGrade(grade: 89.5F);
+            book.AddGrade(grade: 75F);
 
-            GradeBook book2 = book;
-            book2.AddGrade(grade: 75);
+            GradeStatistics stats = book.ComputeStatistics();
+            Console.WriteLine(stats.AverageGrade);
+            Console.WriteLine(stats.HighestGrade);
+            Console.WriteLine(stats.LowestGrade);
 
             Console.ReadLine();
         }
