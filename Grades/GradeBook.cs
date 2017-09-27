@@ -19,5 +19,12 @@ namespace Grades
         {
             Grades.Add(grade);
         }
+
+        public GradeStatistics ComputeStatistics()
+        {
+            GradeStatistics gradeStats = new GradeStatistics();
+
+            return gradeStats;
+        }
     }
 }
