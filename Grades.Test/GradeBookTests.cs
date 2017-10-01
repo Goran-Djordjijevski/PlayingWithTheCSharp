@@ -10,17 +10,16 @@ namespace Grades.Test
         public void ComputesHighestGrade()
         {
             //-- Arrange
-            // Create instance of the class
+            GradeBook book = new GradeBook();
 
-            // Create expected value
+            book.AddGrade(10);
+            book.AddGrade(90);
 
             //-- Act
-            // Create actual value from object instance
+            GradeStatistics result = book.ComputeStatistics();
 
             //-- Assert
-            // Test
-
-            Assert.AreEqual(expected, actual);
+            Assert.AreEqual(90, result.HighestGrade);
         }
     }
 }
