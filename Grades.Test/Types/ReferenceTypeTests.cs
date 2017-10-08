@@ -29,5 +29,15 @@ namespace Grades.Test.Types
             x1 = 4;
             Assert.AreNotEqual(x1, x2);
         }
+
+        [TestMethod]
+        public void StringComparison()
+        {
+            string name1 = "Goran";
+            string name2 = "goran";
+
+            bool result = String.Equals(name1, name2, System.StringComparison.InvariantCultureIgnoreCase);
+            Assert.IsTrue(result);
+        }
     }
 }
