@@ -8,6 +8,16 @@ namespace WPFSimpleApp
 {
     public class Employee
     {
+        public Employee()
+        {
+            this.Name = "";
+        }
+
+        public Employee(string name)
+        {
+            this.Name = name;
+        }
+
         public string Name { get; set; }
     }
 }

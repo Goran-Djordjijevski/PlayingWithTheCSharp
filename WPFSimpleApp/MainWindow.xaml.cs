@@ -24,13 +24,16 @@ namespace WPFSimpleApp
         {
             InitializeComponent();
 
-            Employee e1 = new Employee();
-            e1.Name = "Goran";
+            Employee e1 = new Employee(name: "Goran");
 
-            Employee e2 = new Employee();
-            e2.Name = "Djordjijevski";
+            Employee e2 = new Employee(name: "Djordjijevski");
 
             Output.Text = $"{e1.Name} {e2.Name}";
+        }
+
+        void MainWindow_Loaded(object sender, RoutedEventArgs e)
+        {
+            
         }
     }
 }
