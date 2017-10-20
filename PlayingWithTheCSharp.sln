@@ -11,6 +11,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Grades.Test", "Grades.Test\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WPFSimpleApp", "WPFSimpleApp\WPFSimpleApp.csproj", "{55A252B4-4285-4D08-AE2A-1712DE121C21}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{FFC58A8B-A4A4-4751-986B-ED418FDC2B3B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSTypes", "CSTypes\CSTypes.csproj", "{17EA5992-935B-47A4-8C6B-F665E4B9F3F7}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,9 +37,16 @@ Global
 		{55A252B4-4285-4D08-AE2A-1712DE121C21}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{55A252B4-4285-4D08-AE2A-1712DE121C21}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{55A252B4-4285-4D08-AE2A-1712DE121C21}.Release|Any CPU.Build.0 = Release|Any CPU
+		{17EA5992-935B-47A4-8C6B-F665E4B9F3F7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{17EA5992-935B-47A4-8C6B-F665E4B9F3F7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{17EA5992-935B-47A4-8C6B-F665E4B9F3F7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{17EA5992-935B-47A4-8C6B-F665E4B9F3F7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{17EA5992-935B-47A4-8C6B-F665E4B9F3F7} = {FFC58A8B-A4A4-4751-986B-ED418FDC2B3B}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {1977BD95-2856-4A8E-AA15-894385FF1086}
